@@ -40,9 +40,10 @@ Our LMS is designed to:
 ### Frontend
 - React.js (or Next.js)
 - Tailwind CSS
+- Cloudinary
 
 ### Backend
-- Node.js / Express or FastAPI
+- Java / Springboot
 - PostgreSQL / MongoDB
 - JWT Authentication
 

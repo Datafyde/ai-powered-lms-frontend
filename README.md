@@ -12,6 +12,7 @@ Our LMS is designed to:
 - Utilize AI to recommend courses, assess written work, and track student progress.
 - Support real-time analytics and dynamic content personalization.
 - Be modular, scalable, and developer-friendly.
+- [Read More.](https://docs.google.com/document/d/1F86u9KtxMZ0w9iA4cT8kZcKBrOknhDUkP4GVnAqADlM/edit?tab=t.0#heading=h.lp2gthu7r2cu)
 
 ---
 

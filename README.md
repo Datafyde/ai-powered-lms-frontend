@@ -22,6 +22,7 @@ Our LMS is designed to:
 | Marcus Olawale     | Product Manager               |
 | Elijah Obisesan    | Data Scientist                |
 | Ayomide Oyewole    | Data Scientist                |
+| Ife   Oluwafemi    | UI/UX DESIGNER                |
 | Falode Tobi        | Frontend Developer            |
 | Ojo Ilesanmi       | Backend Developer & Architect |
 

@@ -1,5 +1,12 @@
-import Link from "next/link";
+import Sidebar from "@/components/dashboard/super-admin/Sidebar";
 import { ReactNode } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Super Admin Dashboard",
+  description: "View platform insights, usage metrics, and recent activity.",
+  keywords: ["dashboard", "overview", "super admin", "platform metrics"],
+};
 
 export default function SuperAdminLayout({
   children,
@@ -8,20 +15,7 @@ export default function SuperAdminLayout({
 }) {
   return (
     <div className="flex min-h-screen">
-      <aside className="w-64 bg-gray-900 text-white p-4">
-        <h2 className="text-lg font-bold mb-6">Super Admin</h2>
-        <ul className="space-y-3">
-          <li>
-            <Link href="/dashboard/super-admin">Overview</Link>
-          </li>
-          <li>
-            <Link href="/dashboard/super-admin/tenants">Tenants</Link>
-          </li>
-          <li>
-            <Link href="/dashboard/super-admin/settings">Settings</Link>
-          </li>
-        </ul>
-      </aside>
+      <Sidebar />
       <main className="flex-1 p-6 overflow-y-auto bg-gray-50">{children}</main>
     </div>
   );

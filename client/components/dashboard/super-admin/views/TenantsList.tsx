@@ -13,7 +13,7 @@ export default function TenantsList() {
       id: tenant.id,
     }).toString();
 
-    window.open(`/dashboard/super-admin/tenants?${query}`, "_blank");
+    window.open(`/tenants/${tenant.id}?name=${tenant.name}`, "_blank");
   };
 
   return (

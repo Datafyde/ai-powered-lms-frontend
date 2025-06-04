@@ -2,7 +2,7 @@ import SuperAdminSettings from "@/components/dashboard/super-admin/views/SuperAd
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Super Admin Settings",
+  title: "Settings | Super Admin Dashboard",
   description: "Manage your account and notification preferences",
   keywords: ["settings", "super admin", "preferences"],
 };

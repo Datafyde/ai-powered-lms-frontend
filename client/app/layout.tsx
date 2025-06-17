@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Noto_Sans, Comfortaa, Quando } from "next/font/google";
 import "./globals.css";
+import { styles } from "@/styles/styles";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const notoSans = Noto_Sans({
+  variable: "--font-noto-sans",
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const quando = Quando({
+  variable: "--font-quando",
   subsets: ["latin"],
+  weight: ["400"],
+});
+const comfortaa = Comfortaa({
+  variable: "--font-comfortaa",
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -26,6 +34,10 @@ export const metadata: Metadata = {
     "learning management system",
     "education platform",
   ],
+  icons: {
+    icon: "/logo.png", //Path relative to /public
+    shortcut: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -34,9 +46,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${styles.pageMinSize}  ${notoSans.variable} ${quando.variable} ${comfortaa.variable} antialiased`}
       >
         {children}
       </body>

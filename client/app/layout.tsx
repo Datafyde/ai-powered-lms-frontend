@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Comfortaa, Quando } from "next/font/google";
+import { Noto_Sans, Comfortaa, Quando, Poppins } from "next/font/google";
 import "./globals.css";
 import { styles } from "@/styles/styles";
 
@@ -18,6 +18,11 @@ const comfortaa = Comfortaa({
   variable: "--font-comfortaa",
   subsets: ["latin"],
   weight: ["300", "400", "500"],
+});
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "100", "200", "600", "800", "900", "700"],
 });
 
 export const metadata: Metadata = {
@@ -48,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body
-        className={`${styles.pageMinSize}  ${notoSans.variable} ${quando.variable} ${comfortaa.variable} antialiased`}
+        className={`${styles.pageMinSize}  ${notoSans.variable} ${quando.variable} ${comfortaa.variable} ${poppins.variable} antialiased`}
       >
         {children}
       </body>

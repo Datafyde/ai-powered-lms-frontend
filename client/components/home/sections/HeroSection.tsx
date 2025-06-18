@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import banner from "@/public/assets/hero.png";
+import { styles } from "@/styles/styles";
 
 type Props = {};
 
@@ -8,10 +9,10 @@ const HeroSection = (props: Props) => {
   return (
     <section
       id="#hero"
-      className=" relative w-full h-full bg-gradient-to-bl from-[#4D4D4D]/50 to-[#F2F2F2]/50 flex justify-center items-center "
+      className={`${styles.marginHorizontal} ${styles.paddingLeft} relative  h-full bg-gradient-to-bl from-[#4D4D4D]/50 to-[#F2F2F2]/50 flex justify-center items-center`}
     >
-      <div className=" w-full px-20">
-        <h1 className=" text-6xl font-quando">
+      <div className=" w-full px-10">
+        <h1 className=" text-6xl font-quando leading-18">
           <span className=" text-secondary">AI Powered LMS Built For</span>{" "}
           <span className=" text-primary">Skill Academies</span>
         </h1>

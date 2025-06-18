@@ -5,6 +5,8 @@
   --foreground: #171717;
   --primary: #ff9e2c;
   --secondary: #2a3b5c;
+  --basic: #4740d4;
+  --dark: #1f2533;
 }
 
 @theme {
@@ -13,10 +15,13 @@
 
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-basic: var(--basic);
+  --color-dark: var(--dark);
 
   --font-notosans: var(--font-noto-sans);
   --font-quando: var(--font-quando);
   --font-comfortaa: var(--font-comfortaa);
+  --font-poppins: var(--font-poppins);
 }
 
 @media (prefers-color-scheme: dark) {

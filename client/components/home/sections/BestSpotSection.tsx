@@ -28,7 +28,7 @@ const BestSpotSection = (props: Props) => {
         the courses you created.
       </p>
 
-      <div className=" mt-16 flex gap-4">
+      <div className=" mt-16 flex justify-center gap-4">
         {features.map((item, i) => (
           <div key={i} className="  flex flex-col items-center justify-center">
             <Image
